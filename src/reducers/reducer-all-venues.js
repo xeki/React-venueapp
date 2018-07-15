@@ -1,0 +1,13 @@
+import {ALL_VENUES} from '../actions/all-venues';
+
+
+
+export default function(state=[],action){
+	
+	switch(action.type){
+		case ALL_VENUES:
+			return action.payload.data;
+		default:
+			return state;
+	}
+}
